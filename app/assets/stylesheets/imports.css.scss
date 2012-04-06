@@ -20,4 +20,27 @@ body {
 
 .marginer{
   _padding-top:80px;
+  h2{
+    text-align: justify;
+  }
+}
+
+.fr{
+  float:right;
+}
+
+.toplist{
+  margin-left: 6em;
+  li{
+    font-size:1.2em;
+    line-height: 1.2em;
+  }
+}
+
+.contactbtn{
+  margin-top: 1em;
+}
+
+.contactbtn-left{
+  margin: 3em 0 0 7em;
 }
