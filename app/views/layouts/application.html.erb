@@ -13,33 +13,39 @@
 </head>
 <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="javascript: $.scrollTo( '#project-owners', 800, {easing:'swing'} );">For project owners</a></li>
-              <li><a href="javascript: $.scrollTo( '#developer-firms', 800, {easing:'swing'} );">For developer firms</a></li>
-							<li><a href="javascript: $.scrollTo( '#technologies-we-use', 800, {easing:'swing'} );">Tehnologies we use</a></li>
-							<li><a href="javascript: $.scrollTo( '#technologies-we-prefer', 800, {easing:'swing'} );">Technologies we prefer</a></li>
-							<li><a href="javascript: $.scrollTo( '#about-us', 800, {easing:'swing'} );">About us</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <div class="container">
+
+      <br><br>
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Rails maintainers</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="javascript: $.scrollTo( '#project-owners', 800, {easing:'swing'} );">For project owners</a></li>
+                <li><a href="javascript: $.scrollTo( '#developer-firms', 800, {easing:'swing'} );">For developer firms</a></li>
+                <li><a href="javascript: $.scrollTo( '#technologies-we-use', 800, {easing:'swing'} );">Tehnologies we use</a></li>
+                <li><a href="javascript: $.scrollTo( '#technologies-we-prefer', 800, {easing:'swing'} );">Technologies we prefer</a></li>
+                <li><a href="javascript: $.scrollTo( '#about-us', 800, {easing:'swing'} );">About us</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
+      <br><br><br><br>
+
+      <div class="row">
             <div class="span12">
+              <div id="content">
                 <%= yield %>
+              </div>
             </div>
         </div>
     </div>

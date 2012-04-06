@@ -1,1 +1,23 @@
 @import "bootstrap";
+@import "bourbon";
+
+body {
+  _padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  background: #840401 asset-url('wallpaper2.jpg', 'image') no-repeat top center;
+  padding: 2em;
+}
+
+#content{
+  background: #fff;
+  padding: 2em;
+  @include border-radius(2px);
+  @include box-shadow(0 0 10px 3px #adadad);
+}
+
+.thumbnails{
+  margin-left: 1em;
+}
+
+.marginer{
+  _padding-top:80px;
+}
