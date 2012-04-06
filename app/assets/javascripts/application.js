@@ -29,3 +29,7 @@
 
 //= require_tree .
 //= require_self
+
+$(document).ready(function() {
+    $.getJSON("http://freegeoip.net/json/" + visitor_ip, function(data){ if (data["country_code"] == "HU") $("#attila").hide() });
+});
