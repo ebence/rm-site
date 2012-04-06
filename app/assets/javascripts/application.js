@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 
+//= require jquery.scrollTo-1.4.2-min 
 //= require bootstrap-transition
 //= require bootstrap-modal
 //= require bootstrap-dropdown
