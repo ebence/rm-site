@@ -1,7 +1,3 @@
-<%= javascript_tag do %>
-   var visitor_ip = "<%= request.env['REMOTE_ADDR'] %>";
-<% end %>
-
 <div id="developer-firms" class="marginer well">
     <h2>Everyone has old projects. Does the support breaks Your day into tiny fragments? We would love to help! It's a perfect match, isn’t it?</h2>
     <br>
@@ -166,8 +162,9 @@
 
   <address>
     <strong>By email</strong><br>
-    <a href="mailto:#info@railsmaintainers.com">info@railsmaintainers.com</a>
+    <%= obscure_email( "info@railsmaintainers.com" ) %>
   </address>
 
 </div>
 
+<%= debug @country %>

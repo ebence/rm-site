@@ -8,6 +8,8 @@ gem 'rails', '3.2.2'
 gem 'bootstrap-sass'
 gem 'bourbon'
 
+gem 'geoip'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -23,7 +25,7 @@ end
 gem 'jquery-rails'
 
 group :development, :test do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3'
 end
 
 group :production do
