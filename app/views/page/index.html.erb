@@ -2,41 +2,52 @@
    var visitor_ip = "<%= request.env['REMOTE_ADDR'] %>";
 <% end %>
 
+
+
 <div id="developer-firms" class="marginer well">
-    <h2>Everyone has old projects. Does the support breaks Your day into tiny fragments? We would love to help! It's a perfect match, isn’t it?</h2>
-    <br>
+	<h2 class="highlight">We are Rails guys. We upgrade and maintain Ruby on Rails apps.</h2>
+	<br><br><br>
+	
+	<div class="row-fluid">
+		<div class="span6">
+			<h2 class="highlight">For developer firms</h2>
+			<br><br>
+			
+			<h4>Everyone has old projects. Does the support breaks Your day into tiny fragments? We would love to help! It's a perfect match, isn’t it?</h4>
+			<br>
+			<ul>
+				<li>We have done upgrades. Many.</li>
+				<li>We know the Ruby on Rails ecosystem very well.</li>
+				<li>We are looking for small, medium sized projects to support them.</li>
+				<li>We love to talk with customers.</li>
+			</ul>
+		</div>
+		
+		<div class="span6">
+			<h2 class="highlight">For project owners</h2>
+			<br><br>
+			
+			<h4>We are Rails guys. We upgrade and maintain Ruby on Rails apps.</h4>
+			<br>
 
-    <div class="row">
-      <div class="span7 toplist">
-        <ul>
-          <li>We have done upgrades. Many.</li>
-          <li>We know the Ruby on Rails ecosystem very well.</li>
-          <li>We are looking for small, medium sized projects to support them.</li>
-          <li>We love to talk with customers.</li>
-        </ul>
-      </div>
-      <div class="span3"><%= link_to "Contact us", "javascript: $.scrollTo( '#contact', 800, {easing:'swing'} );", :class => "btn btn-primary btn-large contactbtn" %></div>
-    </div>
-
-</div>
-
-<div id="project-owners" class="marginer well">
-  <h2>We are Rails guys. We upgrade and maintain Ruby on Rails apps.</h2>
-
-  <br>
-
-  <div class="row">
-    <div class="span3"><%= link_to "Contact us", "javascript: $.scrollTo( '#contact', 800, {easing:'swing'} );", :class => "btn btn-primary btn-large contactbtn-left" %></div>
-    <div class="span7 toplist">
-      <ul>
-        <li>Do You have an app which needs some love and a few bugfixes?</li>
-        <li>Your old Rails guy just moved to the Seychelles Islands and don’t answer?</li>
-        <li>Does the site need refactoring?</li>
-        <li>Would You like to move Your app to Heroku or to another hosting provider?</li>
-        <li>A few APIs changed and You have to upgrade the code now?</li>
-      </ul>
-    </div>
-  </div>
+			<ul>
+				<li>Do You have an app which needs some love and a few bugfixes?</li>
+				<li>Your old Rails guy just moved to the Seychelles Islands and don’t answer?</li>
+				<li>Does the site need refactoring?</li>
+				<li>Would You like to move Your app to Heroku or to another hosting provider?</li>
+				<li>A few APIs changed and You have to upgrade the code now?</li>
+			</ul>
+		</div>
+	</div>
+	<br><br>
+	
+	<div class="row services center">
+		<%= image_tag "github.svg", :size => "80x100" %>
+		<%= image_tag "heroku.png", :size => "100x100" %>
+		<%= image_tag "amazon2.png", :size => "100x100" %>
+		<%= image_tag "jquery.png", :size => "100x100" %>
+	</div>
+	<br>
 </div>
 
 <br>
