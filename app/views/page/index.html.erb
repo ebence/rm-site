@@ -1,8 +1,19 @@
-<%= javascript_tag do %>
-   var visitor_ip = "<%= request.env['REMOTE_ADDR'] %>";
-<% end %>
+<div id="developer-firms" class="marginer well">
+    <h2>Everyone has old projects. Does the support breaks Your day into tiny fragments? We would love to help! It's a perfect match, isn’t it?</h2>
+    <br>
 
-
+    <div class="row">
+      <div class="span7 toplist">
+        <ul>
+          <li>We have done upgrades. Many.</li>
+          <li>We know the Ruby on Rails ecosystem very well.</li>
+          <li>We are looking for small, medium sized projects to support them.</li>
+          <li>We love to talk with customers.</li>
+        </ul>
+      </div>
+      <div class="span3"><%= link_to "Contact us", "javascript: $.scrollTo( '#contact', 800, {easing:'swing'} );", :class => "btn btn-primary btn-large contactbtn" %></div>
+    </div>
+</div>
 
 <div id="developer-firms" class="marginer well">
 	<h2 class="highlight">We are Rails guys. We upgrade and maintain Ruby on Rails apps.</h2>
@@ -57,42 +68,44 @@
 
 <br>
 
-<div id="attila">
-<h3>Attila Juhász</h3>
+<% unless @country.country_name == "Hungary" %>
+  <div id="attila">
+  <h3>Attila Juhász</h3>
 
-<ul class="thumbnails" style="float:right">
-  <li class="span3">
-    <a href="javascipt:;" class="thumbnail">
-      <%= image_tag "profile-juhat.jpg" %>
-    </a>
-  </li>
-</ul>
+  <ul class="thumbnails" style="float:right">
+    <li class="span3">
+      <a href="javascipt:;" class="thumbnail">
+        <%= image_tag "profile-juhat.jpg" %>
+      </a>
+    </li>
+  </ul>
 
 
-<p>I am a Rails developer, living and working in Budapest, Hungary. I love Rails, Github and Heroku.</p>
+  <p>I am a Rails developer, living and working in Budapest, Hungary. I love Rails, Github and Heroku.</p>
 
-<p>I have been working on web related projects for nearly ten years. I was one of the first Hungarian who bought the famous Agile Web Development with Rails book back in 2006. Now, I have five years of experience working with Rails. I did frontend and backend works too. I love the full stack.
-  Another aspect is sharing. I teach beginner and intermediate classes of Rails at the Peter Pazmany University (at the Faculty of Information Technology part of course)</p>
+  <p>I have been working on web related projects for nearly ten years. I was one of the first Hungarian who bought the famous Agile Web Development with Rails book back in 2006. Now, I have five years of experience working with Rails. I did frontend and backend works too. I love the full stack.
+    Another aspect is sharing. I teach beginner and intermediate classes of Rails at the Peter Pazmany University (at the Faculty of Information Technology part of course)</p>
 
-<h4>Skills</h4>
+  <h4>Skills</h4>
 
-<ul>
-  <li>10 years web development and 5 years Ruby on Rails experience.</li>
-  <li>I’ve seen many setups, many apps and I solved countless bugs in big Rails apps.</li>
-  <li>I love the test driven and the behavior driven development and I know when to use them.</li>
-</ul>
+  <ul>
+    <li>10 years web development and 5 years Ruby on Rails experience.</li>
+    <li>I’ve seen many setups, many apps and I solved countless bugs in big Rails apps.</li>
+    <li>I love the test driven and the behavior driven development and I know when to use them.</li>
+  </ul>
 
-<h4>Links</h4>
+  <h4>Links</h4>
 
-<ul>
-  <li>Blog: <%= link_to "http://fejlesztes.atti.la", "http://fejlesztes.atti.la" %></li>
-  <li>LinkedIn: <%=  link_to "http://hu.linkedin.com/in/juhat", "http://hu.linkedin.com/in/juhat" %></li>
-  <li>Github: <%= link_to "http://github.com/juhat", "http://github.com/juhat" %></li>
-  <li>StackOverflow: <%= link_to "http://stackoverflow.com/users/442523/juhasz-attila", "http://stackoverflow.com/users/442523/juhasz-attila" %></li>
-</ul>
+  <ul>
+    <li>Blog: <%= link_to "http://fejlesztes.atti.la", "http://fejlesztes.atti.la" %></li>
+    <li>LinkedIn: <%=  link_to "http://hu.linkedin.com/in/juhat", "http://hu.linkedin.com/in/juhat" %></li>
+    <li>Github: <%= link_to "http://github.com/juhat", "http://github.com/juhat" %></li>
+    <li>StackOverflow: <%= link_to "http://stackoverflow.com/users/442523/juhasz-attila", "http://stackoverflow.com/users/442523/juhasz-attila" %></li>
+  </ul>
 
-<br>
-</div>
+  <br>
+  </div>
+<% end %>
 
 <h3>Bence Erdős</h3>
 
@@ -177,8 +190,7 @@
 
   <address>
     <strong>By email</strong><br>
-    <a href="mailto:#info@railsmaintainers.com">info@railsmaintainers.com</a>
+    <%= obscure_email( "info@railsmaintainers.com" ) %>
   </address>
 
 </div>
-
