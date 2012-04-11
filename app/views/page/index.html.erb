@@ -1,26 +1,9 @@
-<div id="developer-firms" class="marginer well">
-    <h2>Everyone has old projects. Does the support breaks Your day into tiny fragments? We would love to help! It's a perfect match, isn’t it?</h2>
-    <br>
-
-    <div class="row">
-      <div class="span7 toplist">
-        <ul>
-          <li>We have done upgrades. Many.</li>
-          <li>We know the Ruby on Rails ecosystem very well.</li>
-          <li>We are looking for small, medium sized projects to support them.</li>
-          <li>We love to talk with customers.</li>
-        </ul>
-      </div>
-      <div class="span3"><%= link_to "Contact us", "javascript: $.scrollTo( '#contact', 800, {easing:'swing'} );", :class => "btn btn-primary btn-large contactbtn" %></div>
-    </div>
-</div>
-
-<div id="developer-firms" class="marginer well">
+<div class="marginer well">
 	<h2 class="highlight">We are Rails guys. We upgrade and maintain Ruby on Rails apps.</h2>
 	<br><br><br>
 	
 	<div class="row-fluid">
-		<div class="span6">
+		<div id="developer-firms" class="span6">
 			<h2 class="highlight">For developer firms</h2>
 			<br><br>
 			
@@ -34,7 +17,7 @@
 			</ul>
 		</div>
 		
-		<div class="span6">
+		<div id="project-owners" class="span6">
 			<h2 class="highlight">For project owners</h2>
 			<br><br>
 			
@@ -53,6 +36,7 @@
 	<br><br>
 	
 	<div class="row services center">
+		<%= image_tag "rails_logo.png", :size => "45x100" %>
 		<%= image_tag "github.svg", :size => "80x100" %>
 		<%= image_tag "heroku.png", :size => "100x100" %>
 		<%= image_tag "amazon2.png", :size => "100x100" %>
