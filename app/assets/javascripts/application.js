@@ -14,6 +14,8 @@
 //= require jquery_ujs
 
 //= require jquery.scrollTo-1.4.2-min 
+//= require easing.js
+//= require jquery.ui.totop.js
 //= require bootstrap-transition
 //= require bootstrap-modal
 //= require bootstrap-dropdown
@@ -29,3 +31,9 @@
 
 //= require_tree .
 //= require_self
+
+$(document).ready(function() {
+
+	$().UItoTop({ easingType: 'easeOutQuart' });
+
+});
