@@ -1,13 +1,36 @@
 <div class="marginer well headerimage">
-  <br><br><br>
-	<h1 class="highlight">We are Rails guys. We upgrade and maintain Ruby on Rails apps.</h1>
-	<br><br>
-	
-	<div class="row-fluid">
+  <div id="hire">
+    <ul class="thumbnails">
+      <% unless @country.country_name == "Hungary" %>
+        <li class="span1">
+          <a href="javascript: $.scrollTo( '#attila', 800, {easing:'swing'} );" class="thumbnail">
+            <%= image_tag "profile-juhat.jpg" %>
+          </a>
+        </li>
+        <li class="span0 endsign">+</li>
+      <% end %>
+      <li class="span1">
+        <a href="javascript: $.scrollTo( '#bence', 800, {easing:'swing'} );" class="thumbnail">
+          <%= image_tag "profile-juhat.jpg" %>
+        </a>
+      </li>
+    </ul>
+    <a href="javascript: $.scrollTo( '#contact', 800, {easing:'swing'} );" class="btn btn-success span2" style="margin-left: 3em;">
+      Hire us!
+    </a>
+    </div>
+
+  <h1 class="highlight">
+    We are Rails guys.
+    <br>
+    We upgrade & maintain Ruby on Rails apps.
+  </h1>
+  <br>
+
+
+	<div class="row-fluid clear">
 		<div id="developer-firms" class="span6"><div>
 			<h2 class="highlight">For developer companies</h2>
-			<br><br>
-			
 			<h4>Everyone has old projects. Does the support breaks Your day into tiny fragments? We would love to help! It's a perfect match, isn’t it?</h4>
 			<br>
 			<ul>
@@ -20,8 +43,6 @@
 		
 		<div id="project-owners" class="span6"><div>
 			<h2 class="highlight">For project owners</h2>
-			<br><br>
-			
 			<h4>We are experienced developers and would love to help you with the small maintainance and upgrading tasks.</h4>
 			<br>
 			<ul>
@@ -47,85 +68,83 @@
 
 <br>
 
-<div id="about-us"></div>
-<h2>About us:</h2>
+<div id="about-us" class="well">
+  <h2>About us</h2>
 
-<br>
+  <% unless @country.country_name == "Hungary" %>
+    <div id="attila">
+    <h3>Attila Juhász</h3>
 
-<% unless @country.country_name == "Hungary" %>
-  <div id="attila">
-  <h3>Attila Juhász</h3>
-
-  <ul class="thumbnails" style="float:right">
-    <li class="span3">
-      <a href="javascipt:;" class="thumbnail">
-        <%= image_tag "profile-juhat.jpg" %>
-      </a>
-    </li>
-  </ul>
+    <ul class="thumbnails" style="float:right">
+      <li class="span3">
+        <a href="#" class="thumbnail" onclick="return false">
+          <%= image_tag "profile-juhat.jpg" %>
+        </a>
+      </li>
+    </ul>
 
 
-  <p>I am a Rails developer, living and working in Budapest, Hungary. I love Rails, Github and Heroku.</p>
+    <p>I am a Rails developer, living and working in Budapest, Hungary. I love Rails, Github and Heroku.</p>
 
-  <p>I have been working on web related projects for nearly ten years. I was one of the first Hungarian who bought the famous Agile Web Development with Rails book back in 2006. Now, I have five years of experience working with Rails. I did frontend and backend works too. I love the full stack.
-    Another aspect is sharing. I teach beginner and intermediate classes of Rails at the Peter Pazmany University (at the Faculty of Information Technology part of course)</p>
+    <p>I have been working on web related projects for nearly ten years. I was one of the first Hungarian who bought the famous Agile Web Development with Rails book back in 2006. Now, I have five years of experience working with Rails. I did frontend and backend works too. I love the full stack.
+      Another aspect is sharing. I teach beginner and intermediate classes of Rails at the Peter Pazmany University (at the Faculty of Information Technology part of course)</p>
+
+    <h4>Skills</h4>
+
+    <ul>
+      <li>10 years web development and 5 years Ruby on Rails experience.</li>
+      <li>I’ve seen many setups, many apps and I solved countless bugs in big Rails apps.</li>
+      <li>I love the test driven and the behavior driven development and I know when to use them.</li>
+    </ul>
+
+    <h4>Links</h4>
+
+    <ul>
+      <li>Blog: <%= link_to "http://fejlesztes.atti.la", "http://fejlesztes.atti.la" %></li>
+      <li>LinkedIn: <%=  link_to "http://hu.linkedin.com/in/juhat", "http://hu.linkedin.com/in/juhat" %></li>
+      <li>Github: <%= link_to "http://github.com/juhat", "http://github.com/juhat" %></li>
+      <li>StackOverflow: <%= link_to "http://stackoverflow.com/users/442523/juhasz-attila", "http://stackoverflow.com/users/442523/juhasz-attila" %></li>
+    </ul>
+
+    <br><br>
+    </div>
+  <% end %>
+
+  <div id="bence">
+  <h3>Bence Erdős</h3>
+
+  <p>With software developer influence and engineering background I have had small development projects (from specification through development up to education) for 10+ years. I decided to learn Ruby in 2010, and I became a Ruby on Rails fan. I love how RoR and the surrounding ecosystem helps us, developers, to reach fast results with beautiful and clean codes.</p>
+
+  <p>I also like teaching. I was an instructor for software and DB technologies at the Faculty of Electrical Engineering of Budapest Polytechnic.</p>
+
+  <p>Understanding IT problems of business focused clients, finding the right solutions and helping them to use the software effectively are the most important things that motivate me.</p>
 
   <h4>Skills</h4>
 
   <ul>
-    <li>10 years web development and 5 years Ruby on Rails experience.</li>
-    <li>I’ve seen many setups, many apps and I solved countless bugs in big Rails apps.</li>
-    <li>I love the test driven and the behavior driven development and I know when to use them.</li>
+    <li>10 years of software development experience</li>
+    <li>10 years of DB and SQL experience</li>
+    <li>2 years of Ruby on Rails experience</li>
+    <li>I solved several business problems with small applications that helped people to be more efficient.</li>
   </ul>
 
   <h4>Links</h4>
 
   <ul>
-    <li>Blog: <%= link_to "http://fejlesztes.atti.la", "http://fejlesztes.atti.la" %></li>
-    <li>LinkedIn: <%=  link_to "http://hu.linkedin.com/in/juhat", "http://hu.linkedin.com/in/juhat" %></li>
-    <li>Github: <%= link_to "http://github.com/juhat", "http://github.com/juhat" %></li>
-    <li>StackOverflow: <%= link_to "http://stackoverflow.com/users/442523/juhasz-attila", "http://stackoverflow.com/users/442523/juhasz-attila" %></li>
+    <li>Blog: <%= link_to "http://benceerdos.posterous.com/tag/it", "http://benceerdos.posterous.com/tag/it" %></li>
+    <li>LinkedIn: <%= link_to "http://www.linkedin.com/in/benceerdos", "http://www.linkedin.com/in/benceerdos" %></li>
+    <li>Github: <%= link_to "https://github.com/ebence", "https://github.com/ebence" %></li>
   </ul>
 
-  <br>
+  <blockquote>
+    “Bence is a problem solver. He can easily get the full picture and track down the bug till the roots. Working with Bence gives me a strong feeling that everything is great and every problem can be solved.”
+  </blockquote>
   </div>
-<% end %>
+</div>
 
-<h3>Bence Erdős</h3>
 
-<p>With software developer influence and engineering background I have had small development projects (from specification through development up to education) for 10+ years. I decided to learn Ruby in 2010, and I became a Ruby on Rails fan. I love how RoR and the surrounding ecosystem helps us, developers, to reach fast results with beautiful and clean codes.</p>
-
-<p>I also like teaching. I was an instructor for software and DB technologies at the Faculty of Electrical Engineering of Budapest Polytechnic.</p>
-
-<p>Understanding IT problems of business focused clients, finding the right solutions and helping them to use the software effectively are the most important things that motivate me.</p>
-
-<h4>Skills</h4>
-
-<ul>
-  <li>10 years of software development experience</li>
-  <li>10 years of DB and SQL experience</li>
-  <li>2 years of Ruby on Rails experience</li>
-  <li>I solved several business problems with small applications that helped people to be more efficient.</li>
-</ul>
-
-<h4>Links</h4>
-
-<ul>
-  <li>Blog: <%= link_to "http://benceerdos.posterous.com/tag/it", "http://benceerdos.posterous.com/tag/it" %></li>
-  <li>LinkedIn: <%= link_to "http://www.linkedin.com/in/benceerdos", "http://www.linkedin.com/in/benceerdos" %></li>
-  <li>Github: <%= link_to "https://github.com/ebence", "https://github.com/ebence" %></li>
-</ul>
-
-<blockquote>
-  “Bence is a problem solver. He can easily get the full picture and track down the bug till the roots. Working with Bence gives me a strong feeling that everything is great and every problem can be solved.”
-</blockquote>
-
-<br><br>
-
-<hr>
-
-<div id="technologies-we-use" class="marginer">
-    <h2>Technologies we've used and we can support:</h2>
+<div id="technologies-we-use" class="well">
+    <h2>Technologies we've used and we can support</h2>
 
     <ul>
       <li><b>framework:</b> Ruby on Rails: prior 1.0 to latest</li>
@@ -147,12 +166,8 @@
     <p>This is not a full list. Ask if something is missing from here!</p>
 </div>
 
-<br><br>
-
-<hr>
-
-<div id="technologies-we-prefer" class="marginer">
-    <h2>Technology stack we prefer:</h2>
+<div id="technologies-we-prefer" class="well">
+    <h2>Technology stack we prefer</h2>
 
     <ul>
       <li><b>framework:</b> latest Ruby on Rails</li>
@@ -165,12 +180,8 @@
     </ul>
 </div>
 
-<br><br>
-
-<hr>
-
-<div id="contact" class="marginer">
-  <h2>Contact:</h2>
+<div id="contact" class="well">
+  <h2>Contact</h2>
 
   <address>
     <strong>By email</strong><br>

@@ -3,7 +3,7 @@
 
 body {
   background: #840401 asset-url('wallpaper2.jpg', 'image') no-repeat top center;
-  padding: 2em;
+  padding: 1em 2em 2em 2em;
 }
 
 #content{
@@ -11,17 +11,22 @@ body {
   padding: 2em;
   @include border-radius(2px);
   @include box-shadow(0 0 6px 1px #adadad);
+  
+  h2{
+    text-align:center;
+    margin-bottom: 2em;
+  }
+  > .well{
+    margin-bottom: 3em;
+  }
+}
+
+.clear{
+  clear:both;
 }
 
 .thumbnails{
   margin-left: 1em;
-}
-
-.marginer{
-  _padding-top:80px;
-  h2{
-    text-align: justify;
-  }
 }
 
 .fr{
@@ -36,18 +41,21 @@ body {
   }
 }
 
-.contactbtn{
-  margin-top: 1em;
-}
-
-.contactbtn-left{
-  margin: 3em 0 0 7em;
-}
-
 .highlight{
 	font-family: 'Della Respira', serif;
 	font-size: 26px;
 	text-align: center !important;
+}
+
+h1.highlight{
+	font-size: 30px;
+	line-height: 1.5em;
+  margin-top: 14px;
+  text-shadow:0px 1px 3px #edfcff
+}
+
+h2.highlight{
+  margin-bottom: 1em !important;
 }
 
 .services > img{
@@ -66,4 +74,17 @@ body {
 .headerimage{
   background: asset-url('header.jpg', 'image') no-repeat top center;
   border: 1px solid #cecece;
+  .thumbnails{
+    
+  }
+}
+
+.endsign{
+  font-size: 3em;
+  padding-top: 22px;
+  color: #b2dc7e;
+}
+
+#hire{
+  float:right;
 }
