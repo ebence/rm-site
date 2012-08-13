@@ -59,10 +59,6 @@
 
         <div class="row">
             <div class="span12" id="legal">
-              Copyright: App Maintainers Ltd. 1115 Budapest, Ildikó utca 24. TT 4. Hungary, registered at Metropolitan Tribunal of Budapest under number 01-09-988752 <br/>
-Minden jog fenntartva! App Maintainers Kft. 1115 Budapest, Ildikó utca 24. TT 4. regisztrálva a Fővárosi Törvényszék Cégbíróságán 01-09-988752 szám alatt. 
-            </div>
-            <div class="span12" id="legal">
               "Rails", "Ruby on Rails", and the Rails logo are registered trademarks of David Heinemeier Hansson.
             </div>
         </div>
